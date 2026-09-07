@@ -1,0 +1,769 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #080808;
+    color: #111;
+}
+
+
+button,
+input {
+    font-family: inherit;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+.kfc-auth-wrapper {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+
+
+.kfc-auth-brand {
+    position: relative;
+
+    width: 45%;
+    min-height: 100vh;
+
+    overflow: hidden;
+
+    background: #080808;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 60px;
+}
+
+
+.kfc-auth-brand-content {
+    position: relative;
+    z-index: 5;
+
+    width: 100%;
+    max-width: 500px;
+}
+
+
+
+
+.kfc-auth-logo {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 85px;
+    height: 85px;
+
+    margin-bottom: 35px;
+
+    background: #e4002b;
+    color: white;
+
+    font-size: 28px;
+    font-weight: 900;
+
+    letter-spacing: -1px;
+
+    transform: rotate(-3deg);
+
+    transition: 0.3s ease;
+}
+
+
+.kfc-auth-logo:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+
+
+.kfc-auth-brand-line {
+    display: block;
+
+    width: 70px;
+    height: 5px;
+
+    margin-bottom: 25px;
+
+    background: #e4002b;
+}
+
+
+
+.kfc-auth-brand h1 {
+    max-width: 450px;
+
+    font-size: clamp(45px, 5vw, 76px);
+    line-height: 0.95;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+
+    letter-spacing: -3px;
+}
+
+
+.kfc-auth-brand h1 span {
+    display: block;
+
+    color: #e4002b;
+}
+
+
+.kfc-auth-brand-content p {
+    max-width: 420px;
+
+    margin-top: 30px;
+
+    color: #bdbdbd;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+
+
+.kfc-auth-shape {
+    position: absolute;
+
+    border-radius: 50%;
+
+    background: #e4002b;
+
+    opacity: 0.9;
+}
+
+
+.kfc-auth-shape-one {
+    width: 300px;
+    height: 300px;
+
+    right: -150px;
+    top: -100px;
+}
+
+
+.kfc-auth-shape-two {
+    width: 180px;
+    height: 180px;
+
+    left: -90px;
+    bottom: 100px;
+
+    opacity: 0.25;
+}
+
+
+.kfc-auth-shape-three {
+    width: 70px;
+    height: 70px;
+
+    right: 18%;
+    bottom: 12%;
+}
+
+
+
+
+.kfc-auth-container {
+    width: 55%;
+    min-height: 100vh;
+
+    background: #f5f5f5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px 30px;
+}
+
+
+
+
+.kfc-auth-card {
+    width: 100%;
+    max-width: 500px;
+
+    padding: 45px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e2e2;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+
+
+
+.kfc-auth-form-section {
+    display: none;
+}
+
+
+
+
+.kfc-auth-heading {
+    margin-bottom: 35px;
+}
+
+
+.kfc-auth-eyebrow {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: #e4002b;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.kfc-auth-heading h2 {
+    color: #111;
+
+    font-size: 42px;
+    font-weight: 900;
+
+    letter-spacing: -1.5px;
+}
+
+
+.kfc-auth-heading p {
+    margin-top: 12px;
+
+    color: #707070;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+
+
+.kfc-auth-form {
+    width: 100%;
+}
+
+
+
+.kfc-auth-input-group {
+    width: 100%;
+
+    margin-bottom: 20px;
+}
+
+
+.kfc-auth-input-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #222;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+
+.kfc-auth-input-box {
+    position: relative;
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #d7d7d7;
+
+    background: #fff;
+
+    transition: 0.25s ease;
+}
+
+
+.kfc-auth-input-box:focus-within {
+    border-color: #e4002b;
+
+    box-shadow:
+        0 0 0 3px rgba(228, 0, 43, 0.08);
+}
+
+
+.kfc-auth-input-box > i {
+    width: 48px;
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 15px;
+}
+
+
+.kfc-auth-input-box input {
+    width: 100%;
+
+    height: 52px;
+
+    border: none;
+    outline: none;
+
+    padding: 0 12px 0 0;
+
+    color: #111;
+
+    background: transparent;
+
+    font-size: 14px;
+}
+
+
+.kfc-auth-input-box input::placeholder {
+    color: #aaa;
+}
+
+
+
+
+.kfc-auth-password-toggle {
+    width: 48px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: #777;
+
+    font-size: 15px;
+}
+
+
+.kfc-auth-password-toggle:hover {
+    color: #e4002b;
+}
+
+
+
+.kfc-auth-forgot-row {
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin: -5px 0 25px;
+}
+
+
+.kfc-auth-link {
+    color: #e4002b;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition: 0.2s ease;
+}
+
+
+.kfc-auth-link:hover {
+    color: #111;
+
+    text-decoration: underline;
+}
+
+
+
+
+.kfc-auth-primary-btn {
+    width: 100%;
+    height: 55px;
+
+    border: none;
+
+    background: #e4002b;
+    color: #fff;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.kfc-auth-primary-btn:hover {
+    background: #bd0025;
+
+    transform: translateY(-2px);
+}
+
+
+.kfc-auth-primary-btn:active {
+    transform: translateY(0);
+}
+
+
+
+
+.kfc-auth-divider {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 30px 0;
+}
+
+
+.kfc-auth-divider::before,
+.kfc-auth-divider::after {
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background: #dedede;
+}
+
+
+.kfc-auth-divider span {
+    color: #999;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+
+
+.kfc-auth-switch {
+    text-align: center;
+}
+
+
+.kfc-auth-switch p {
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+.kfc-auth-switch a {
+    color: #e4002b;
+
+    font-weight: 800;
+}
+
+
+.kfc-auth-switch a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.kfc-auth-footer {
+    margin-top: 40px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #e5e5e5;
+
+    text-align: center;
+}
+
+
+.kfc-auth-footer a {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #222;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+.kfc-auth-footer a:hover {
+    color: #e4002b;
+}
+
+
+.kfc-auth-footer p {
+    margin-top: 12px;
+
+    color: #aaa;
+
+    font-size: 11px;
+}
+
+
+
+@media (max-width: 950px) {
+
+    .kfc-auth-brand {
+        width: 40%;
+
+        padding: 40px;
+    }
+
+
+    .kfc-auth-container {
+        width: 60%;
+
+        padding: 35px 20px;
+    }
+
+
+    .kfc-auth-card {
+        padding: 35px;
+    }
+
+
+    .kfc-auth-brand h1 {
+        font-size: 50px;
+    }
+
+}
+
+
+
+
+@media (max-width: 700px) {
+
+    .kfc-auth-wrapper {
+        display: block;
+    }
+
+
+    .kfc-auth-brand {
+        width: 100%;
+        min-height: 330px;
+
+        padding: 45px 25px;
+
+        align-items: flex-start;
+    }
+
+
+    .kfc-auth-brand-content {
+        max-width: 600px;
+    }
+
+
+    .kfc-auth-logo {
+        width: 65px;
+        height: 65px;
+
+        margin-bottom: 25px;
+
+        font-size: 21px;
+    }
+
+
+    .kfc-auth-brand-line {
+        width: 50px;
+        height: 4px;
+
+        margin-bottom: 18px;
+    }
+
+
+    .kfc-auth-brand h1 {
+        font-size: clamp(38px, 10vw, 55px);
+
+        letter-spacing: -2px;
+    }
+
+
+    .kfc-auth-brand-content p {
+        margin-top: 18px;
+
+        font-size: 13px;
+    }
+
+
+    .kfc-auth-shape-one {
+        width: 180px;
+        height: 180px;
+
+        right: -90px;
+        top: -80px;
+    }
+
+
+    .kfc-auth-shape-two {
+        width: 100px;
+        height: 100px;
+
+        left: -50px;
+        bottom: -40px;
+    }
+
+
+    .kfc-auth-shape-three {
+        display: none;
+    }
+
+
+    .kfc-auth-container {
+        width: 100%;
+        min-height: auto;
+
+        padding: 30px 18px 40px;
+    }
+
+
+    .kfc-auth-card {
+        max-width: 550px;
+
+        padding: 30px 22px;
+
+        box-shadow:
+            0 10px 35px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .kfc-auth-heading {
+        margin-bottom: 28px;
+    }
+
+
+    .kfc-auth-heading h2 {
+        font-size: 34px;
+    }
+
+}
+
+
+
+
+@media (max-width: 400px) {
+
+    .kfc-auth-brand {
+        min-height: 300px;
+
+        padding: 35px 20px;
+    }
+
+
+    .kfc-auth-brand h1 {
+        font-size: 35px;
+    }
+
+
+    .kfc-auth-container {
+        padding: 20px 12px 30px;
+    }
+
+
+    .kfc-auth-card {
+        padding: 25px 18px;
+    }
+
+
+    .kfc-auth-heading h2 {
+        font-size: 30px;
+    }
+
+
+    .kfc-auth-heading p {
+        font-size: 13px;
+    }
+
+
+    .kfc-auth-input-box input {
+        height: 50px;
+
+        font-size: 13px;
+    }
+
+
+    .kfc-auth-password-toggle {
+        height: 50px;
+    }
+
+
+    .kfc-auth-primary-btn {
+        height: 52px;
+    }
+
+}
+
+
+
+
+@media (max-width: 320px) {
+
+    .kfc-auth-brand {
+        min-height: 280px;
+
+        padding: 30px 16px;
+    }
+
+
+    .kfc-auth-brand h1 {
+        font-size: 31px;
+    }
+
+
+    .kfc-auth-card {
+        padding: 22px 15px;
+    }
+
+
+    .kfc-auth-heading h2 {
+        font-size: 27px;
+    }
+
+}

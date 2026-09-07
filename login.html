@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KFC - Sign In</title>
+
+    <link rel="stylesheet" href="./login.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <main class="kfc-auth-wrapper">
+
+    
+        <section class="kfc-auth-brand">
+
+            <div class="kfc-auth-brand-content">
+
+                <a href="./index.html" class="kfc-auth-logo">
+                    KFC
+                </a>
+
+                <span class="kfc-auth-brand-line"></span>
+
+                <h1>
+                    Finger Lickin'
+                    <span>Good.</span>
+                </h1>
+
+                <p>
+                    Sign in to your KFC account and enjoy
+                    your favourite meals faster.
+                </p>
+
+            </div>
+
+
+            <div class="kfc-auth-shape kfc-auth-shape-one"></div>
+            <div class="kfc-auth-shape kfc-auth-shape-two"></div>
+            <div class="kfc-auth-shape kfc-auth-shape-three"></div>
+
+        </section>
+
+
+
+        <section class="kfc-auth-container">
+
+            <div class="kfc-auth-card">
+
+
+
+                <section
+                    class="kfc-auth-form-section"
+                    id="kfc-login"
+                >
+
+                    <div class="kfc-auth-heading">
+
+                        <span class="kfc-auth-eyebrow">
+                            WELCOME BACK
+                        </span>
+
+                        <h2>
+                            Sign in
+                        </h2>
+
+                        <p>
+                            Already have a KFC account?
+                            Log in below.
+                        </p>
+
+                    </div>
+
+
+                    <form class="kfc-auth-form">
+
+
+                        <div class="kfc-auth-input-group">
+
+                            <label for="kfc-login-email">
+                                Email or phone number
+                            </label>
+
+                            <div class="kfc-auth-input-box">
+
+                                <i class="fa-regular fa-user"></i>
+
+                                <input
+                                    type="text"
+                                    id="kfc-login-email"
+                                    placeholder="Enter email or phone number"
+                                    autocomplete="username"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="kfc-auth-input-group">
+
+                            <label for="kfc-login-password">
+                                Password
+                            </label>
+
+                            <div class="kfc-auth-input-box">
+
+                                <i class="fa-solid fa-lock"></i>
+
+                                <input
+                                    type="password"
+                                    id="kfc-login-password"
+                                    placeholder="Enter your password"
+                                    autocomplete="current-password"
+                                >
+
+                                <button
+                                    type="button"
+                                    class="kfc-auth-password-toggle"
+                                    data-target="kfc-login-password"
+                                    aria-label="Show password"
+                                >
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="kfc-auth-forgot-row">
+
+                            <a
+                                href="#kfc-forgot"
+                                class="kfc-auth-link"
+                            >
+                                Forgot password?
+                            </a>
+
+                        </div>
+
+
+
+                        <button
+                            type="submit"
+                            class="kfc-auth-primary-btn"
+                        >
+                            Sign in
+                        </button>
+
+                    </form>
+
+
+
+                    <div class="kfc-auth-divider">
+                        <span>OR</span>
+                    </div>
+
+
+
+                    <div class="kfc-auth-switch">
+
+                        <p>
+                            New to KFC?
+                            <a href="#kfc-signup">
+                                Create an account
+                            </a>
+                        </p>
+
+                    </div>
+
+
+                </section>
+
+
+
+      
+
+                <section
+                    class="kfc-auth-form-section"
+                    id="kfc-signup"
+                >
+
+                    <div class="kfc-auth-heading">
+
+                        <span class="kfc-auth-eyebrow">
+                            JOIN KFC
+                        </span>
+
+                        <h2>
+                            Create account
+                        </h2>
+
+                        <p>
+                            Create your account and order
+                            your favourite food easily.
+                        </p>
+
+                    </div>
+
+
+                    <form class="kfc-auth-form">
+
+
+                        <div class="kfc-auth-input-group">
+
+                            <label for="kfc-signup-name">
+                                Full name
+                            </label>
+
+                            <div class="kfc-auth-input-box">
+
+                                <i class="fa-regular fa-user"></i>
+
+                                <input
+                                    type="text"
+                                    id="kfc-signup-name"
+                                    placeholder="Enter your full name"
+                                    autocomplete="name"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="kfc-auth-input-group">
+
+                            <label for="kfc-signup-email">
+                                Email address
+                            </label>
+
+                            <div class="kfc-auth-input-box">
+
+                                <i class="fa-regular fa-envelope"></i>
+
+                                <input
+                                    type="email"
+                                    id="kfc-signup-email"
+                                    placeholder="Enter your email"
+                                    autocomplete="email"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="kfc-auth-input-group">
+
+                            <label for="kfc-signup-password">
+                                Password
+                            </label>
+
+                            <div class="kfc-auth-input-box">
+
+                                <i class="fa-solid fa-lock"></i>
+
+                                <input
+                                    type="password"
+                                    id="kfc-signup-password"
+                                    placeholder="Create a password"
+                                    autocomplete="new-password"
+                                >
+
+                                <button
+                                    type="button"
+                                    class="kfc-auth-password-toggle"
+                                    data-target="kfc-signup-password"
+                                    aria-label="Show password"
+                                >
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="kfc-auth-primary-btn"
+                        >
+                            Create account
+                        </button>
+
+                    </form>
+
+
+                    <div class="kfc-auth-switch">
+
+                        <p>
+                            Already have an account?
+                            <a href="#kfc-login">
+                                Sign in
+                            </a>
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+
+          
+                <section
+                    class="kfc-auth-form-section"
+                    id="kfc-forgot"
+                >
+
+                    <div class="kfc-auth-heading">
+
+                        <span class="kfc-auth-eyebrow">
+                            ACCOUNT RECOVERY
+                        </span>
+
+                        <h2>
+                            Forgot password?
+                        </h2>
+
+                        <p>
+                            Enter your email address and we'll
+                            help you reset your password.
+                        </p>
+
+                    </div>
+
+
+                    <form class="kfc-auth-form">
+
+                        <div class="kfc-auth-input-group">
+
+                            <label for="kfc-forgot-email">
+                                Email address
+                            </label>
+
+                            <div class="kfc-auth-input-box">
+
+                                <i class="fa-regular fa-envelope"></i>
+
+                                <input
+                                    type="email"
+                                    id="kfc-forgot-email"
+                                    placeholder="Enter your email"
+                                    autocomplete="email"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="kfc-auth-primary-btn"
+                        >
+                            Send reset link
+                        </button>
+
+                    </form>
+
+
+                    <div class="kfc-auth-switch">
+
+                        <p>
+                            Remember your password?
+                            <a href="#kfc-login">
+                                Back to sign in
+                            </a>
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+
+            
+
+                <section
+                    class="kfc-auth-form-section"
+                    id="kfc-reset"
+                >
+
+                    <div class="kfc-auth-heading">
+
+                        <span class="kfc-auth-eyebrow">
+                            RESET PASSWORD
+                        </span>
+
+                        <h2>
+                            Create new password
+                        </h2>
+
+                        <p>
+                            Choose a strong new password
+                            for your account.
+                        </p>
+
+                    </div>
+
+
+                    <form class="kfc-auth-form">
+
+
+                        <div class="kfc-auth-input-group">
+
+                            <label for="kfc-reset-password">
+                                New password
+                            </label>
+
+                            <div class="kfc-auth-input-box">
+
+                                <i class="fa-solid fa-lock"></i>
+
+                                <input
+                                    type="password"
+                                    id="kfc-reset-password"
+                                    placeholder="Enter new password"
+                                    autocomplete="new-password"
+                                >
+
+                                <button
+                                    type="button"
+                                    class="kfc-auth-password-toggle"
+                                    data-target="kfc-reset-password"
+                                    aria-label="Show password"
+                                >
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="kfc-auth-input-group">
+
+                            <label for="kfc-reset-confirm">
+                                Confirm password
+                            </label>
+
+                            <div class="kfc-auth-input-box">
+
+                                <i class="fa-solid fa-lock"></i>
+
+                                <input
+                                    type="password"
+                                    id="kfc-reset-confirm"
+                                    placeholder="Confirm new password"
+                                    autocomplete="new-password"
+                                >
+
+                                <button
+                                    type="button"
+                                    class="kfc-auth-password-toggle"
+                                    data-target="kfc-reset-confirm"
+                                    aria-label="Show password"
+                                >
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="kfc-auth-primary-btn"
+                        >
+                            Reset password
+                        </button>
+
+                    </form>
+
+
+                    <div class="kfc-auth-switch">
+
+                        <p>
+                            <a href="#kfc-login">
+                                Back to sign in
+                            </a>
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =====================================
+                     FOOTER
+                ====================================== -->
+
+                <footer class="kfc-auth-footer">
+
+                    <a href="./index.html">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        Back to home
+                    </a>
+
+                    <p>
+                        © 2026 KFC Clone. All rights reserved.
+                    </p>
+
+                </footer>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+ 
+
+    <script>
+
+
+        const kfcAuthPasswordButtons =
+            document.querySelectorAll(
+                ".kfc-auth-password-toggle"
+            );
+
+
+        kfcAuthPasswordButtons.forEach(button => {
+
+            button.addEventListener("click", () => {
+
+                const targetId =
+                    button.getAttribute("data-target");
+
+                const passwordInput =
+                    document.getElementById(targetId);
+
+                const icon =
+                    button.querySelector("i");
+
+
+                if (passwordInput.type === "password") {
+
+                    passwordInput.type = "text";
+
+                    icon.classList.remove(
+                        "fa-eye"
+                    );
+
+                    icon.classList.add(
+                        "fa-eye-slash"
+                    );
+
+                    button.setAttribute(
+                        "aria-label",
+                        "Hide password"
+                    );
+
+                } else {
+
+                    passwordInput.type = "password";
+
+                    icon.classList.remove(
+                        "fa-eye-slash"
+                    );
+
+                    icon.classList.add(
+                        "fa-eye"
+                    );
+
+                    button.setAttribute(
+                        "aria-label",
+                        "Show password"
+                    );
+
+                }
+
+            });
+
+        });
+
+
+
+      
+
+        const kfcAuthSections =
+            document.querySelectorAll(
+                ".kfc-auth-form-section"
+            );
+
+
+        function kfcShowAuthSection(sectionId) {
+
+        
+
+            kfcAuthSections.forEach(section => {
+
+                section.style.display = "none";
+
+            });
+
+
+
+            if (!sectionId) {
+
+                sectionId = "#kfc-login";
+
+            }
+
+
+
+            const targetSection =
+                document.querySelector(sectionId);
+
+
+
+            if (targetSection) {
+
+                targetSection.style.display = "block";
+
+            } else {
+
+            
+
+                document.querySelector(
+                    "#kfc-login"
+                ).style.display = "block";
+
+            }
+
+        }
+
+
+
+
+        window.addEventListener(
+            "hashchange",
+            () => {
+
+                kfcShowAuthSection(
+                    window.location.hash
+                );
+
+            }
+        );
+
+
+
+
+        kfcShowAuthSection(
+            window.location.hash
+        );
+
+    </script>
+
+</body>
+</html>
